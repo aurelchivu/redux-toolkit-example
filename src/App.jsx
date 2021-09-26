@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './App.css';
-import { useGetPicturesQuery } from './redux/services/nasaApi';
+import HomePage from './components/HomePage';
 
 function App() {
-  const { data, isFetching } = useGetPicturesQuery();
-
-  console.log(data);
-
-  return <div className='App'></div>;
+  return (
+    <div className='App'>
+      <HomePage />
+    </div>
+  );
 }
 
 export default App;
